@@ -1,0 +1,8 @@
+div { width: 50%}
+a { background: yellow}
+h1, ul {background: aqua}
+* {font-style:italic}
+
+/*con questa istruzione interveniamo su tutti i tag 
+selector della pagina inclusi dentro un qualunque div*/
+div * {border: 0.2em solid red}

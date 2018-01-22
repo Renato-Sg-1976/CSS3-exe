@@ -1,0 +1,33 @@
+
+
+
+/**/
+h2 { color: yellow !important}
+
+/*normalmente la seguente riga avrebbe la precedenza,
+invece siccome la predente è stata specificata come important
+ha la precedenza su questa*/
+h2 { color: black}
+
+
+
+/*il meccanismo delle precedenze delle regole dichiarate
+assegna un punteggio in questo modo : 
+0,0,0,2 è un punteggio più alto di 0,0,0,1
+0,1,0,0 è un punteggio più alto di 0,0,0,2
+ 
+*/
+
+/* a fianco di ogni regola indichiamo il punteggio*/
+
+
+h2 { background: aqua} 				/* 0,0,0,1 */
+body h2 {background: blue} 			/* 0,0,0,2 */
+
+#heading-2 {background: maroon} 	/* 0,1,0,0 */
+h2#heading-2 {background: red}  	/* 0,1,0,1 */
+
+h2.headers {background: olive}  	/* 0,0,1,1 */
+body h2.headers {background: green} /* 0,0,1,2 */
+
+

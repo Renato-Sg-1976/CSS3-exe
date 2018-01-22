@@ -1,0 +1,17 @@
+
+/* tutti gli <p> che sono inseriti successivamente ad un tag <h3>
+e che hanno in comune con tale <h3> lo stesso genitore  <p>*/
+
+h3 + p{ background: yellow}
+
+/* tutti gli span dentro un qualunque <p>*/
+p > span { background: lime}
+
+
+
+
+/* definiamo 3 diversi tipi di selettori ciascuno con 3 livelli di gerarchia via via più profondi */
+body > ul {background: fuchsia}
+body > ul > li {background:aqua}
+body > ul > li > span {background:orange}
+ 

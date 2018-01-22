@@ -1,0 +1,13 @@
+ul li { color: red}
+ol li { color: blue}
+
+
+
+/*questa regola sovrascrive la precedente*/
+#menu li {color: green}
+
+
+
+/*questa regola sovrascrive le due precedente*/
+#menu ul li {color: orange}
+#menu ol li {color: purple}
